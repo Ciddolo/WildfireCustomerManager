@@ -5,6 +5,7 @@ C:\Users\marco\Desktop\WildfireCustomersManager\WildfireCustomersManager\bin\Rel
 C:\Users\marco\Desktop\WildfireCustomersManager\WildfireCustomersManager\bin\Release\WildfireCustomersManager.pdb
 C:\Users\marco\Desktop\WildfireCustomersManager\WildfireCustomersManager\bin\Release\Newtonsoft.Json.dll
 C:\Users\marco\Desktop\WildfireCustomersManager\WildfireCustomersManager\bin\Release\Newtonsoft.Json.xml
+C:\Users\marco\Desktop\WildfireCustomersManager\WildfireCustomersManager\obj\Release\WildfireCustomersManager.csprojAssemblyReference.cache
 C:\Users\marco\Desktop\WildfireCustomersManager\WildfireCustomersManager\obj\Release\WildfireCustomersManager.FormAddCoupon.resources
 C:\Users\marco\Desktop\WildfireCustomersManager\WildfireCustomersManager\obj\Release\WildfireCustomersManager.FormMainApp.resources
 C:\Users\marco\Desktop\WildfireCustomersManager\WildfireCustomersManager\obj\Release\WildfireCustomersManager.FormAddCustomer.resources
