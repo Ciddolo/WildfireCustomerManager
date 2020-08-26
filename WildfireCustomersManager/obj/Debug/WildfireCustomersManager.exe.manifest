@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WildfireCustomersManager.exe" size="1212416">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WildfireCustomersManager.exe" size="1213440">
       <assemblyIdentity name="WildfireCustomersManager" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KeTj5DaDyoSp3HksGl9vTS7bA4iKPucUD2NWxhPmUWI=</dsig:DigestValue>
+        <dsig:DigestValue>J+u4rEyb9JB8rFWjwuYD42c+hT24P0tKgMRjRQCurEk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

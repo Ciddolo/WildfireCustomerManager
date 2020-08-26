@@ -130,5 +130,21 @@ namespace WildfireCustomersManager
                 MessageBox.Show(String.Format("Coupons used succesfully! \nCoupons used: {0}", ++cycles),
                                               "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        public bool CheckCouponsAboutToExpire()
+        {
+            bool output = false;
+
+            for (int i = 0; i < ValidCoupons.Count; i++)
+            {
+                if (ValidCoupons[i].IsAboutToExpire())
+                {
+                    output = true;
+                    return output;
+                }
+            }
+
+            return output;
+        }
     }
 }

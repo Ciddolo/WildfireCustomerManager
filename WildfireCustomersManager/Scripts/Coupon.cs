@@ -43,5 +43,10 @@ namespace WildfireCustomersManager
                 return toPay;
             }
         }
+
+        public bool IsAboutToExpire()
+        {
+            return (ExpireDate - DateTime.Now).TotalDays < 7.0d;
+        }
     }
 }

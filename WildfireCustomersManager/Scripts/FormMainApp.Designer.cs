@@ -47,7 +47,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonRefresh = new System.Windows.Forms.Button();
             this.buttonBackup = new System.Windows.Forms.Button();
@@ -57,6 +56,7 @@
             this.buttonAddCoupon = new System.Windows.Forms.Button();
             this.buttonShowDiscount = new System.Windows.Forms.Button();
             this.buttonModifyNotes = new System.Windows.Forms.Button();
+            this.buttonChexkExpire = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -211,7 +211,7 @@
             this.buttonLoad.BackColor = System.Drawing.Color.SteelBlue;
             this.buttonLoad.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLoad.ForeColor = System.Drawing.Color.White;
-            this.buttonLoad.Location = new System.Drawing.Point(530, 205);
+            this.buttonLoad.Location = new System.Drawing.Point(560, 205);
             this.buttonLoad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(94, 46);
@@ -261,21 +261,11 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 50);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1131, 100);
             this.panel1.TabIndex = 6;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(212, 46);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -295,7 +285,7 @@
             this.buttonRefresh.BackColor = System.Drawing.Color.SteelBlue;
             this.buttonRefresh.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRefresh.ForeColor = System.Drawing.Color.White;
-            this.buttonRefresh.Location = new System.Drawing.Point(630, 205);
+            this.buttonRefresh.Location = new System.Drawing.Point(660, 206);
             this.buttonRefresh.Name = "buttonRefresh";
             this.buttonRefresh.Size = new System.Drawing.Size(94, 46);
             this.buttonRefresh.TabIndex = 4;
@@ -308,7 +298,7 @@
             this.buttonBackup.BackColor = System.Drawing.Color.SteelBlue;
             this.buttonBackup.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBackup.ForeColor = System.Drawing.Color.White;
-            this.buttonBackup.Location = new System.Drawing.Point(730, 205);
+            this.buttonBackup.Location = new System.Drawing.Point(760, 206);
             this.buttonBackup.Name = "buttonBackup";
             this.buttonBackup.Size = new System.Drawing.Size(94, 46);
             this.buttonBackup.TabIndex = 5;
@@ -395,9 +385,23 @@
             this.buttonModifyNotes.Name = "buttonModifyNotes";
             this.buttonModifyNotes.Size = new System.Drawing.Size(94, 46);
             this.buttonModifyNotes.TabIndex = 19;
-            this.buttonModifyNotes.Text = "Modify Notes";
+            this.buttonModifyNotes.Text = "Show Notes";
             this.buttonModifyNotes.UseVisualStyleBackColor = false;
             this.buttonModifyNotes.Click += new System.EventHandler(this.buttonModifyNotes_Click);
+            // 
+            // buttonChexkExpire
+            // 
+            this.buttonChexkExpire.BackColor = System.Drawing.Color.SteelBlue;
+            this.buttonChexkExpire.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonChexkExpire.ForeColor = System.Drawing.Color.White;
+            this.buttonChexkExpire.Location = new System.Drawing.Point(412, 205);
+            this.buttonChexkExpire.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonChexkExpire.Name = "buttonChexkExpire";
+            this.buttonChexkExpire.Size = new System.Drawing.Size(94, 46);
+            this.buttonChexkExpire.TabIndex = 20;
+            this.buttonChexkExpire.Text = "Check Coupons";
+            this.buttonChexkExpire.UseVisualStyleBackColor = false;
+            this.buttonChexkExpire.Click += new System.EventHandler(this.buttonChexkExpire_Click);
             // 
             // FormMainApp
             // 
@@ -405,6 +409,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(1128, 603);
+            this.Controls.Add(this.buttonChexkExpire);
             this.Controls.Add(this.buttonModifyNotes);
             this.Controls.Add(this.buttonShowDiscount);
             this.Controls.Add(this.buttonAddCoupon);
@@ -468,7 +473,7 @@
         private System.Windows.Forms.Button buttonAddCoupon;
         private System.Windows.Forms.Button buttonShowDiscount;
         private System.Windows.Forms.Button buttonModifyNotes;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonChexkExpire;
     }
 }
 

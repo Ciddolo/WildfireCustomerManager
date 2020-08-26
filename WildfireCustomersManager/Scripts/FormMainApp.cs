@@ -55,6 +55,7 @@ namespace WildfireCustomersManager
             FindDispatcher();
             LoadDatabase(ProgramSettings.DataPath);
             AddCustomersToGrid();
+            ExpireAlert();
 
             timer.Interval = 3600000;
             timer.Tick += new EventHandler(timer_Tick);
@@ -62,6 +63,24 @@ namespace WildfireCustomersManager
         }
 
         //MISCELLANEOUS
+
+        public bool ExpireAlert()
+        {
+            string message = "Following customers have coupons about to expire: \n";
+            bool couponsAboutToExpire = false;
+            foreach (Customer customer in Customers.Values)
+            {
+                if (customer.CheckCouponsAboutToExpire())
+                {
+                    couponsAboutToExpire = true;
+                    message += String.Format("{0} {1}\n", customer.Name, customer.Surname);
+                }
+            }
+            if (couponsAboutToExpire)
+                MessageBox.Show(message, "Coupons about to expire!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            return couponsAboutToExpire;
+        }
 
         public void AutoBackup()
         {
@@ -79,8 +98,6 @@ namespace WildfireCustomersManager
 
             if (!Directory.Exists(todayDirectory))
                 Directory.CreateDirectory(todayDirectory);
-
-            Console.WriteLine(String.Format("TODAY PATH: [{0}]", todayPath));
 
             SaveDatabase(todayPath);
         }
@@ -514,6 +531,12 @@ namespace WildfireCustomersManager
         }
 
         //BUTTONS
+
+        private void buttonChexkExpire_Click(object sender, EventArgs e)
+        {
+            if (!ExpireAlert())
+                MessageBox.Show("No coupon about to expire.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
 
         private void buttonModifyNotes_Click(object sender, EventArgs e)
         {
